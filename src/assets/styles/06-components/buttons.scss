@@ -1,0 +1,31 @@
+button {
+    background-color: $primary;
+    // border: 2px solid $stroke;
+    border: none;
+    color: $text;
+    padding: 6px 16px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 1px rgba(22, 22, 26, 0.2);
+    
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.icon-button {
+        padding: 6px;
+
+        &.rounded {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &.text-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.t-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: $text;
+    &::placeholder {
+        color: $paragraph;
+        font-weight: 500;
+    }
+}

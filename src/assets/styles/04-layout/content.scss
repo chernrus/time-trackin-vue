@@ -1,0 +1,12 @@
+.main {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+}
+
+.page-wrapper {
+    padding: 32px;
+    width: 100%;
+    // border-radius: 32px 10px 10px 32px;
+    background-color: $base-background;
+}

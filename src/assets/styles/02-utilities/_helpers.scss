@@ -1,0 +1,26 @@
+.max-w {
+    padding: 15px;
+    max-width: 1680px;
+    margin: 0 auto;
+    width: 100%;
+}
+.height-max {
+    min-height: calc(100vh - 64px);
+}
+.max-width {
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.--shadowed {
+    box-shadow: 0px 5px 10px 1px rgba(22, 22, 26, 0.2);
+}
+
+.--shadowed-right {
+    box-shadow: 5px 0px 10px 0px rgba(22, 22, 26, 0.2);
+}
+
+.pointer {
+    cursor: pointer;
+}

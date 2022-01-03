@@ -1,0 +1,25 @@
+body, #app {
+    // min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $text;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+    background-color: $base-background;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    // color: $paper;
+    font-size: 1.6rem;
+    font-family: 'Rubik';
+    // background-color: $dark;
+}

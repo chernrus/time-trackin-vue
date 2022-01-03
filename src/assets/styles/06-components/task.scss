@@ -1,0 +1,22 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.task-card {
+    width: 100%;
+    background-color: $card-background;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .remove-button {
+        margin-left: 16px;
+    }
+}
