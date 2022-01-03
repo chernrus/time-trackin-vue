@@ -15,8 +15,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__date-time {
+        display: flex;
+        flex-direction: column;
+        min-height: 60px;
+        text-align: right;
+        justify-content: center;
+    }
+
+    &__time,
+    &__date {
+        white-space: nowrap;
+    }
+
+    &__time {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &__date {
+        display: none;
+        margin-top: 18px;
+    }
+
+    &:hover {
+        .task-card__date {
+            display: inline-block;
+        }
+    }
 
     .remove-button {
-        margin-left: 16px;
+        margin-left: 32px;
     }
 }

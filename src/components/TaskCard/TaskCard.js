@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { mapActions } from 'vuex';
 import { _date } from '@/helpers';
 
@@ -12,6 +13,10 @@ export default {
     computed: {
         time({ value: { time = 0 } }) {
             return _date.formatSecondsToTimeStr(time);
+        },
+        timePeriod({ value: { start_date, end_date } }) {
+            if (!start_date || !end_date) return '';
+            return `${format(start_date, 'HH:mm')} — ${format(end_date, 'HH:mm')}`;
         },
     },
     methods: {
