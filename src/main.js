@@ -8,6 +8,16 @@ const app = new Vue({
     template: '<App/>',
     store,
     render: (h) => h(App),
+    beforeCreate() {
+        store.dispatch('storage/initialiseStore', true);
+        store.subscribe((mutation, state) => {
+            localStorage.setItem('storage', JSON.stringify(state));
+            // if (mutation.type.startsWith('storage/')) {
+            //     const { storage } = state;
+            //     localStorage.setItem('storage', JSON.stringify(storage));
+            // }
+        });
+    },
 });
 Vue.directive('click-outside', {
     bind: function (el, binding, vnode) { // eslint-disable-line
