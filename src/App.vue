@@ -4,7 +4,7 @@
         <HelloWorld msg="Welcome to Your Vue.js App"/> -->
         <!-- <main-header></main-header> -->
         <main class="main">
-            <side-menu/>
+            <!-- <side-menu/> -->
             <page-wrapper>
                 <time-tracker/>
             </page-wrapper>

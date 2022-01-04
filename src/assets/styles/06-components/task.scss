@@ -26,16 +26,13 @@
     &__time,
     &__date {
         white-space: nowrap;
-    }
-
-    &__time {
         &:hover {
             color: $primary;
         }
     }
 
     &__date {
-        display: none;
+        // display: none;
         margin-top: 18px;
     }
 

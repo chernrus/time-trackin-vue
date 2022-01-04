@@ -20,7 +20,6 @@ export default {
     watch: {
         value: {
             handler(value) {
-                console.log({ value });
                 this.taskName = value;
             },
             immediate: true,

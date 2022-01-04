@@ -9,4 +9,17 @@ const app = new Vue({
     store,
     render: (h) => h(App),
 });
+Vue.directive('click-outside', {
+    bind: function (el, binding, vnode) { // eslint-disable-line
+        el.event = function (event) {
+            if (!(el === event.target || el.contains(event.target))) {
+                vnode.context[binding.expression](event);
+            }
+        };
+        document.body.addEventListener('click', el.event);
+    },
+    unbind(el) {
+        document.body.removeEventListener('click', el.event);
+    },
+});
 app.$mount('#app');
