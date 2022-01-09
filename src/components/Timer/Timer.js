@@ -36,12 +36,20 @@ export default {
             this.seconds = 0;
             this.timestamp = null;
         },
+        getSeconds(start, end) {
+            return Math.floor((end.getTime() - start.getTime()) / 1000);
+        },
         sendResult() {
+            const {
+                timestamp,
+                start_date,
+                end_date,
+            } = this;
             this.$emit('onStop', {
-                time: this.seconds,
-                timestamp: this.timestamp,
-                start_date: this.start_date,
-                end_date: this.end_date,
+                time: this.getSeconds(start_date, end_date),
+                timestamp,
+                start_date,
+                end_date,
             });
         },
     },
